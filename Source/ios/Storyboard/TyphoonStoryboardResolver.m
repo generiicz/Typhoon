@@ -20,17 +20,6 @@
 
 @implementation TyphoonStoryboardResolver
 
-+ (void)load
-{
-    NSBundle *bundle = [NSBundle mainBundle];
-    TyphoonStoryboardProvider *provider = [TyphoonStoryboardProvider new];
-    NSArray *resolvingStoryboardNames = [provider collectStoryboardsFromBundle:bundle];
-    
-    if (resolvingStoryboardNames.count > 0) {
-        [self swizzleUIStoryboardWithNames:resolvingStoryboardNames];
-    }
-}
-
 + (void)swizzleUIStoryboardWithNames:(NSArray *)storyboardNames
 {
     SEL sel = @selector(storyboardWithName:bundle:);
