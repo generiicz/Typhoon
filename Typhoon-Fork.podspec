@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'no-arc' do |sna|
     sna.requires_arc = false
     sna.source_files = non_arc_files
-    sna.dependency 'Typhoon/IntrospectionUtils'
+    sna.dependency 'Typhoon-Fork/IntrospectionUtils'
   end
 
   spec.subspec 'IntrospectionUtils' do |sna|
