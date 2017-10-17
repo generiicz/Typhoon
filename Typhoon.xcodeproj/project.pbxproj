@@ -1853,7 +1853,6 @@
 		FA8044331DF0A74700AB8C5D /* TyphoonStoryboardDefinitionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TyphoonStoryboardDefinitionContext.m; sourceTree = "<group>"; };
 		FA932D931DDC7890000FE54C /* TyphoonAssemblyAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TyphoonAssemblyAccessor.h; sourceTree = "<group>"; };
 		FA932D941DDC7890000FE54C /* TyphoonAssemblyAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TyphoonAssemblyAccessor.m; sourceTree = "<group>"; };
-		FAF38E611DF04DFD00F44BC0 /* Typhoon.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Typhoon.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2011,7 +2010,6 @@
 			isa = PBXGroup;
 			children = (
 				FA3329681F18E1AB0035456E /* .travis.yml */,
-				FAF38E611DF04DFD00F44BC0 /* Typhoon.podspec */,
 				6B076E951936F63A0083714E /* Source */,
 				6B076F931936F63A0083714E /* Tests */,
 				90ABC3EB1A36B09E008D8162 /* Typhoon */,
