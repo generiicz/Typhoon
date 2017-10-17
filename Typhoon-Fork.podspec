@@ -5,17 +5,13 @@ Pod::Spec.new do |spec|
   spec.summary = 'Dependency injection for Objective-C and Swift. Light-weight, yet flexible and full-featured.'
   spec.homepage = 'http://www.typhoonframework.org'
   spec.author = {'Jasper Blues, Aleksey Garbarev, Robert Gilliam, Daniel Rodríguez, Erik Sundin & Contributors' => 'info@typhoonframework.org'}
-  spec.source = {:git => 'git@gitlab.com:veon-development/Typhoon-Fork.git'}
+  spec.source = {:git => 'git@gitlab.com:veon-development/Typhoon-Fork.git', :branch => "master" }
 
   spec.ios.deployment_target = '5.0'
-  spec.osx.deployment_target = '10.7'
-  spec.tvos.deployment_target = '9.0'
 
   spec.source_files = 'Source/**/*.{h,m}'
   non_arc_files = 'Source/Factory/Internal/NSInvocation+TCFInstanceBuilder.{h,m}'
-  spec.ios.exclude_files = 'Source/osx', non_arc_files
-  spec.osx.exclude_files = 'Source/ios', non_arc_files
-  spec.tvos.exclude_files = 'Source/osx', non_arc_files
+  spec.ios.exclude_files = 'Source/ios', non_arc_files
 
   spec.requires_arc = true
   spec.subspec 'no-arc' do |sna|
